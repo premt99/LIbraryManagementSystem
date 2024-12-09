@@ -1,29 +1,33 @@
 # Library Management System API
 
-## 1. About the Project:
-This project is a simple **Library Management System API** built using **Flask**. It lets you perform basic operations like adding and getting books and members.
+A simple Flask-based API for managing a library system. This application allows CRUD operations for books and members. It includes optional features like search functionality and pagination.
 
-## 2. Features:
-- You can **add new books** and **view a list of books**.
-- You can **add new members** and **view a list of members**.
-- No fancy features yet, but you can easily expand this later!
+## Features
+- Add, view, update, and delete books and members.
+- Search for books by title or author.
+- Pagination for listing books and members.
+- Token-based authentication (optional).
 
-## 3. How to Run:
+## Requirements
+- Python 3.7 or higher
+- Flask 2.x or higher
 
-1. **Clone this repository:**
-   - First, you need to get the project on your computer. You can do this by cloning it from GitHub (or by downloading it).
-   ```bash
-   git clone <your_repo_link>
+## Setup Instructions
 
-CREATE A VIRTUAL ENVIRONMENT 
-- python -m venv env
-ON WINDOW - .\env\Scripts\activate
-ON MAC - source env/bin/activate
+### 1. Clone the Repository
+bash
+git clone https://github.com/<your-username>/LibraryManagementSystem.git
+cd LibraryManagementSystem
 
-INSTALL REQUIRE LIBRARIES
+
+#Create a virtual environment 
+python -m venv venv
+source venv/bin/activate   # On macOS/Linux
+venv\Scripts\activate      # On Windows
+
+#Install Dependencies 
 pip install -r requirements.txt
 
-
-RUN THE APPLICATION
+#Run the applications
 python app.py
 
